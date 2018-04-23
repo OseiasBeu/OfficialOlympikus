@@ -9,14 +9,14 @@ const mysql = require('mysql');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-//definindo as rotas para a tbl_funcionarios
+//definindo as rotas 
 const router = express.Router();
 router.get('/', (req, res) => res.json({ message: 'Funcionando!' }));
 app.use('/', router);
 
 //inicia o servidor
 app.listen(port);
-console.log('Servidor funcionando na porta 3000!');
+console.log(`Servidor funcionando na porta ${port}!`);
 
 function execSQLQuery(sqlQry, res) {
     const connection = mysql.createConnection({
