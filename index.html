@@ -10,17 +10,19 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Importa o CSS utilizado neste projeto -->
     <link href="css/sideBar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modalNovoProduto.css">
 
 </head>
 
 <body>
     <nav id="cabeca">
-        <div class="caixaCabeca"> Logo
-            <a href="#menu-toggle" class="bn btn-secondarytn btn-secondary" id="menu-toggle">Abrir</a>
+        <div id="logo" class="caixaCabeca">
+
         </div>
         <div class="caixaCabeca">Produtos</div>
         <div class="caixaCabeca">Relatórios</div>
@@ -30,7 +32,9 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
+
         <div id="sidebar-wrapper">
+
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
@@ -54,6 +58,7 @@
                 </li>
             </ul>
         </div>
+        <a href="#menu-toggle" class="bn btn-secondarytn btn-secondary" id="menu-toggle">=>></a>
         <!-- /Sidebar -->
 
         <!-- Conteúdo da Pagina -->
@@ -73,7 +78,33 @@
 
                 <article class="flex">
                     Produtos
-                    <button class="botao">Novo Produto</button>
+                    <!-- <button class="botao">Novo Produto</button> -->
+
+                    <!-- modal -->
+                    <div class="w3-container">
+                        <!-- <h2>W3.CSS Animated Modal</h2> -->
+
+                        <button onclick="document.getElementById('id01').style.display='block'" class="botao w3-button w3-black">Novo Produto </button>
+
+                        <div id="id01" class="w3-modal w3-animate-opacity">
+                            <div class="w3-modal-content w3-card-4">
+                                <header class="w3-container w3-teal">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <p>Nome:</p>
+                                    <p>Categoria:</p>
+                                    <p>:</p>
+                                </div>
+                                <footer class="w3-container w3-teal">
+                                    <p>Modal Footer</p>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fim do modal -->
+
                 </article>
 
 

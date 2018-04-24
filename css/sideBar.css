@@ -23,7 +23,7 @@ body {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #e0e0e0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -65,12 +65,12 @@ body {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #000;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     background: rgba(255, 255, 255, 0.2);
 }
 
@@ -86,11 +86,12 @@ body {
 }
 
 .sidebar-nav>.sidebar-brand a {
-    color: #999999;
+    color: #000;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .sidebar-nav>.sidebar-brand a:hover {
-    color: #fff;
+    /* color: #fff; */
     background: none;
 }
 
@@ -116,4 +117,3 @@ body {
         margin-right: 0;
     }
 }
-
