@@ -11,6 +11,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="imagem/png" href="img/olympikus-logo.png">
 
     <!-- Importa o CSS utilizado neste projeto -->
     <link href="css/sideBar.css" rel="stylesheet">
@@ -24,9 +25,9 @@
         <div id="logo" class="caixaCabeca">
 
         </div>
-        <div class="caixaCabeca">Produtos</div>
-        <div class="caixaCabeca">Relatórios</div>
-        <div class="caixaCabeca">usuario</div>
+        <div class="caixaCabeca"><p>Produtos</p></div>
+        <div class="caixaCabeca"><p>Relatórios</p></div>
+        <div class="caixaCabeca"><p>usuario</p></div>
     </nav>
 
     <div id="wrapper">
@@ -64,9 +65,6 @@
         <!-- Conteúdo da Pagina -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-                <!-- #################################################################################### -->
-                <!-- #################################################################################### -->
-                <!-- #################################################################################### -->
                 <!--#################################################################################################################################-->
                 <!--######################################################## INICIO DO BLOCO 1 ######################################################-->
 
@@ -109,7 +107,10 @@
 
 
                 <article class="menuSeletor">
+                <div id="barraMenu">
                     <input type="text" placeholder="Código do Produto">
+                    <p><small>Use o campo acima para inserir produtos. Você pode buscar pelos campos "nome","descrição" e "referência" do produto.</small></p>
+                </div>
                     <select>
                         <option value="ordenarPor">Ordenar Por:</option>
                         <option value="name">Nome</option>
@@ -118,7 +119,7 @@
                         <option value="reference">Referência</option>
                     </select>
                 </article>
-                <!--######################################################## FIM DO BLOCO 2 ######################################################-->
+                <!--######################################################## FIM DO BLOCO 1 ######################################################-->
                 <!--##############################################################################################################################-->
 
                 <!--#################################################################################################################################-->
