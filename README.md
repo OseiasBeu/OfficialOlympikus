@@ -1,4 +1,4 @@
 # ofiaicalolympicus
 
 
-https://oseiasbeu.github.io/OfficialOlympikus/
+https://oseiasbeu.github.io/OfficialOlympikus/index.html
