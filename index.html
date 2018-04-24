@@ -11,6 +11,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/menuSeletor.css">
     <!-- <link rel="icon" type="imagem/png" href="img/olympikus-logo.png"> -->
 
     <!-- Importa o CSS utilizado neste projeto -->
@@ -43,27 +44,93 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        FILTROS
-                    </a>
+    FILTROS
+</a>
                 </li>
                 <li>
-                    <a href="#">Homens</a>
+                    <button class="dropdown-btn"><a href="#">Homens</a>
+                                <i class="fa fa-caret-down"></i>
+                                </button>
+                    <div class="dropdown-container">
+                        <a href="#">Banners</a>
+                        <a href="#">Vídeos</a>
+                        <button id="tituloBTN" class="dropdown-btn">
+                            <a href="#">Produtos</a><i class="fa fa-caret-down"></i></button>
+                        <div id="bloco" class="dropdown-container">
+                            <a href="#">Calçados</a>
+                            <a href="#">Roupas</a>
+                            <a href="#">Acessórios</a>
+                        </div>
+                    </div>
+
                 </li>
                 <li>
-                    <a href="#">Mulheres</a>
+                    <button class="dropdown-btn"><a href="#">Mulheres</a>
+                            <i class="fa fa-caret-down"></i>
+                            </button>
+                    <div class="dropdown-container">
+                        <a href="#">Banners</a>
+                        <a href="#">Vídeos</a>
+                        <button id="tituloBTN" class="dropdown-btn">
+                        <a href="#">Produtos</a><i class="fa fa-caret-down"></i></button>
+                        <div id="bloco" class="dropdown-container">
+                            <a href="#">Calçados</a>
+                            <a href="#">Roupas</a>
+                            <a href="#">Acessórios</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="#">Kids</a>
+                    <button class="dropdown-btn"><a href="#">Kids</a>
+                            <i class="fa fa-caret-down"></i>
+                            </button>
+                    <div class="dropdown-container">
+                        <a href="#">Banners</a>
+                        <a href="#">Vídeos</a>
+                        <button id="tituloBTN" class="dropdown-btn">
+                        <a href="#">Produtos</a><i class="fa fa-caret-down"></i></button>
+                        <div id="bloco" class="dropdown-container">
+                            <a href="#">Calçados</a>
+                            <a href="#">Roupas</a>
+                            <a href="#">Acessórios</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="#">Esportes</a>
+                    <button class="dropdown-btn"><a href="#">Esportes</a>
+                            <i class="fa fa-caret-down"></i>
+                            </button>
+                    <div class="dropdown-container">
+                        <a href="#">Banners</a>
+                        <a href="#">Vídeos</a>
+                        <button id="tituloBTN" class="dropdown-btn">
+                        <a href="#">Produtos</a><i class="fa fa-caret-down"></i></button>
+                        <div id="bloco" class="dropdown-container">
+                            <a href="#">Calçados</a>
+                            <a href="#">Roupas</a>
+                            <a href="#">Acessórios</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="#">Lançamentos</a>
+                    <button class="dropdown-btn"><a href="#">Lançamentos</a>
+                            <i class="fa fa-caret-down"></i>
+                            </button>
+                    <div class="dropdown-container">
+                        <a href="#">Banners</a>
+                        <a href="#">Vídeos</a>
+                        <button id="tituloBTN" class="dropdown-btn">
+                        <a href="#">Produtos</a><i class="fa fa-caret-down"></i></button>
+                        <div id="bloco" class="dropdown-container">
+                            <a href="#">Calçados</a>
+                            <a href="#">Roupas</a>
+                            <a href="#">Acessórios</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
-        <a href="#menu-toggle" class="bn btn-secondarytn btn-secondary" id="menu-toggle">=>></a>
+        <a href="#menu-toggle" class="bn btn-secondarytn btn-secondary" id="menu-toggle"> >> </a>
         <!-- /Sidebar -->
 
         <!-- Conteúdo da Pagina -->
@@ -112,17 +179,19 @@
 
                 <article class="menuSeletor">
                     <div id="barraMenu">
-                        <input type="text" placeholder="Código do Produto">
+                        <input type="text" placeholder="Código do Produto...">
                         <p><small>Use o campo acima para inserir produtos. 
-                            Você pode buscar pelos campos "nome","descrição" e "referência" do produto.</small></p>
+        Você pode buscar pelos campos "nome","descrição" e "referência" do produto.</small></p>
                     </div>
+
                     <select>
-                        <option value="ordenarPor">Ordenar Por:</option>
-                        <option value="name">Nome</option>
-                        <option value="date">Data</option>
-                        <option value="states">Status</option>
-                        <option value="reference">Referência</option>
-                    </select>
+    <option value="ordenarPor">Ordenar Por:</option>
+    <option value="name">Nome</option>
+    <option value="date">Data</option>
+    <option value="states">Status</option>
+    <option value="reference">Referência</option>
+</select>
+
                 </article>
                 <!--######################################################## FIM DO BLOCO 1 ######################################################-->
                 <!--##############################################################################################################################-->
@@ -179,36 +248,36 @@
                     <!--###############################################################[FIM DA COLUNA]##################################################-->
                     <!--##############################################################[INICIO COLUNA]#############################################################-->
                     <!-- <article class="tituloColuna">
-                        <aside class="registroColuna">
-                            <img class="amostraDeImagem" src="img/FOTOS HORIZONTAIS.jpg" alt="">
-                            <p>Nome_Da_Imagem</p>
-                        </aside>
+    <aside class="registroColuna">
+        <img class="amostraDeImagem" src="img/FOTOS HORIZONTAIS.jpg" alt="">
+        <p>Nome_Da_Imagem</p>
+    </aside>
 
-                        <aside class="registroColuna">
-                            <p>id_referencia</p>
-                        </aside>
+    <aside class="registroColuna">
+        <p>id_referencia</p>
+    </aside>
 
 
-                        <aside class="registroColuna">
-                            <p>id_categoria</p>
-                        </aside> -->
+    <aside class="registroColuna">
+        <p>id_categoria</p>
+    </aside> -->
 
                     <!--################################ campo de status################################################### -->
                     <!-- coluna do de status -->
 
                     <!-- <aside class="registroColuna">
-                            <aside class="status">
-                                <form action="#" method="POST">
-                                    <input type="radio" name="status" value="ativo">Ativo<br>
-                                    <input type="radio" name="status" value="inativo">Inativo<br>
-                                </form>
-                            </aside>
-                            <aside class="opcao">
-                                <a href="#">EDIÇÃO</a> <br>
-                                <a href="#">EXCLUSÃO</a> <br>
-                            </aside>
-                        </aside>
-                    </article> -->
+        <aside class="status">
+            <form action="#" method="POST">
+                <input type="radio" name="status" value="ativo">Ativo<br>
+                <input type="radio" name="status" value="inativo">Inativo<br>
+            </form>
+        </aside>
+        <aside class="opcao">
+            <a href="#">EDIÇÃO</a> <br>
+            <a href="#">EXCLUSÃO</a> <br>
+        </aside>
+    </aside>
+</article> -->
                     <!--###############################################################[FIM DA COLUNA]##################################################-->
                     <!--######################################################## FIM DO BLOCO 3 ########################################################-->
                     <!--###########################################################################S#####################################################-->
@@ -227,10 +296,10 @@
     <!-- Axios Requisições HTTP -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- <script src="./bower_components/axios/dist/axios.js"></script>
-    <script>
-        axios.get('https://api.github.com/users/codeheaven-io');
-    </script>
-    <script src="js/request.js"></script> -->
+<script>
+axios.get('https://api.github.com/users/codeheaven-io');
+</script>
+<script src="js/request.js"></script> -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -243,6 +312,7 @@
     <!-- Importa o Javascript utilizado neste projeto -->
     <script src="js/script.js"></script>
     <script src="js/request.js"></script>
+    <script src="js/menuSeletor.js"></script>
 
 </body>
 
