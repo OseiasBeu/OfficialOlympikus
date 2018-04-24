@@ -2,7 +2,7 @@
     background-color: #e0e0e0a4;
     text-align: center;
     width: 100%;
-    height: 90px;
+    height: 70px;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -10,32 +10,32 @@
 #cabeca #logo {
     background-image: url('../img/olympikus-logo.png');
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 40%;
     background-position-x: 50%;
 }
 
 #menu-toggle {
     z-index: 10;
     position: absolute;
-    top: 91px;
+    /* top: 73px; */
+    /* left: -63px; */
     padding-left: 10px;
     padding-right: 10px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    /* left: 300px; */
+    /* float: left; */
+    margin-left: -8px;
 }
 
 .caixaCabeca {
-    /* border: 2px solid blue; */
     border-left: 1px solid #d1c3c3;
-    /* border-: 1px solid #d1c3c3; */
     text-transform: uppercase;
     font-weight: bolder;
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
     text-align: center;
 }
-
 
 .flex {
     border-top: 10px solid #d1c3c3;
@@ -48,10 +48,23 @@
     font-size: 25px;
     display: flex;
     justify-content: space-between;
+    height: 80px;
 }
 
 .botao {
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 20px;
+    /* position: relative; */
+    margin-top: -15px;
+}
+
+#corBotao {
     background-color: #4CAF50;
+}
+
+
+/* background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -59,8 +72,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 20px;
-}
+    border-radius: 20px; */
 
 .menuSeletor {
     /* border: 2px solid olive; */
@@ -70,19 +82,26 @@
 }
 
 .menuSeletor input {
+    margin-top: 25px;
     border-radius: 5px;
-    /* padding-right: 20px; */
-    width: 65%;
+    width: 100%;
     height: 50px;
-    /* border-color: teal; */
 }
 
-#barraMenu{
+#barraMenu {
     display: block;
 }
 
 .menuSeletor select {
+    margin-top: 25px;
     width: 30%;
+    height: 50px;
+}
+
+small {
+    position: relative;
+    top: -10px;
+    font-size: 12px;
 }
 
 #colunas {
@@ -91,28 +110,33 @@
 }
 
 .tituloColuna {
-    /* border-left: 1px solid #d1c3c3; */
-    /* padding-left: 50px; */
     height: 100px;
     display: flex;
     flex-wrap: nowrap;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .tituloColuna aside {
-    border-left: 1px solid #d1c3c3;
+    border-right: 1px solid #d1c3c3;
     border-bottom: 1px solid #d1c3c3;
     display: flex;
     flex-wrap: nowrap;
     box-sizing: border-box;
-    /* border: 2px solid orange; */
     height: 100%;
     width: 100%;
     align-items: center;
-    /* align-content: center; */
+    justify-content: center;
+}
+
+#cabecalhoColunas aside {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 .amostraDeImagem {
+    margin-right: 30px;
     width: 90px;
     height: 90px;
 }

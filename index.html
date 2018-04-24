@@ -11,7 +11,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="icon" type="imagem/png" href="img/olympikus-logo.png">
+    <!-- <link rel="icon" type="imagem/png" href="img/olympikus-logo.png"> -->
 
     <!-- Importa o CSS utilizado neste projeto -->
     <link href="css/sideBar.css" rel="stylesheet">
@@ -22,12 +22,16 @@
 
 <body>
     <nav id="cabeca">
-        <div id="logo" class="caixaCabeca">
-
+        <div id="logo" class="caixaCabeca"></div>
+        <div class="caixaCabeca">
+            <p>Produtos</p>
         </div>
-        <div class="caixaCabeca"><p>Produtos</p></div>
-        <div class="caixaCabeca"><p>Relatórios</p></div>
-        <div class="caixaCabeca"><p>usuario</p></div>
+        <div class="caixaCabeca">
+            <p>Relatórios</p>
+        </div>
+        <div class="caixaCabeca">
+            <p>usuario</p>
+        </div>
     </nav>
 
     <div id="wrapper">
@@ -82,7 +86,7 @@
                     <div class="w3-container">
                         <!-- <h2>W3.CSS Animated Modal</h2> -->
 
-                        <button onclick="document.getElementById('id01').style.display='block'" class="botao w3-button w3-black">Novo Produto </button>
+                        <button id="corBotao" onclick="document.getElementById('id01').style.display='block'" class="botao w3-button w3-black">Novo Produto </button>
 
                         <div id="id01" class="w3-modal w3-animate-opacity">
                             <div class="w3-modal-content w3-card-4">
@@ -107,10 +111,11 @@
 
 
                 <article class="menuSeletor">
-                <div id="barraMenu">
-                    <input type="text" placeholder="Código do Produto">
-                    <p><small>Use o campo acima para inserir produtos. Você pode buscar pelos campos "nome","descrição" e "referência" do produto.</small></p>
-                </div>
+                    <div id="barraMenu">
+                        <input type="text" placeholder="Código do Produto">
+                        <p><small>Use o campo acima para inserir produtos. 
+                            Você pode buscar pelos campos "nome","descrição" e "referência" do produto.</small></p>
+                    </div>
                     <select>
                         <option value="ordenarPor">Ordenar Por:</option>
                         <option value="name">Nome</option>
@@ -125,17 +130,25 @@
                 <!--#################################################################################################################################-->
                 <!--######################################################## INICIO DO BLOCO 3 ######################################################-->
                 <section id="colunas">
-                    <article class="tituloColuna">
-                        <aside>Produto</aside>
-                        <aside>Referência</aside>
-                        <aside>Categoria</aside>
-                        <aside>Status</aside>
+                    <article id="cabecalhoColunas" class="tituloColuna">
+                        <aside>
+                            <p>Produto</p>
+                        </aside>
+                        <aside>
+                            <p>Referência</p>
+                        </aside>
+                        <aside>
+                            <p>Categoria</p>
+                        </aside>
+                        <aside>
+                            <p>Status</p>
+                        </aside>
                     </article>
                     <!--##############################################################[COLUNA]#############################################################-->
                     <article class="tituloColuna">
                         <aside class="registroColuna">
                             <img class="amostraDeImagem" src="img/FOTOS HORIZONTAIS.jpg" alt="">
-                            <p id="nomeP"></p>
+                            <p id="nomeP">Nome_Da_Imagem</p>
                         </aside>
 
                         <aside class="registroColuna">
