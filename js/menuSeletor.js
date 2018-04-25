@@ -13,3 +13,11 @@ for (i = 0; i < dropdown.length; i++) {
         }
     });
 }
+
+
+let openFile = function(event) {
+    let input = event.target;
+    let file = input.files[0];
+    console.log(file.lastModifiedDate);
+
+}
